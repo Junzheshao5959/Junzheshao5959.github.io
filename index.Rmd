@@ -1,7 +1,5 @@
 ---
-title: "Holy cow!"
+title: "Welcome to my website!"
 ---
 
-### I have a webpage!
-
-And I can put all kinds of stuff on it!
+You're up and running!

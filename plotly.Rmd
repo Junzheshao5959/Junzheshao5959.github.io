@@ -1,0 +1,70 @@
+---
+title: "Instacart Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+data("instacart")
+#levels(as.factor(instacart$aisle))
+aisle_dt <- instacart %>%
+  group_by(aisle)%>%
+  summarise(n_order = n()) %>% 
+  arrange(-n_order)
+
+plot_A <- aisle_dt %>% 
+  filter(n_order > 10000) %>% 
+  ggplot(aes(x= reorder(aisle,-n_order), y = n_order)) + geom_bar(stat="identity")+theme(axis.text.x = element_text(angle = 45, hjust = 1) )+ labs(x = "",y = "")
+
+ggplotly(plot_A)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+data("instacart")
+#levels(as.factor(instacart$aisle))
+instacart %>%
+  group_by(aisle)%>%
+  summarise(mean_prior_order = mean(days_since_prior_order),
+            n_order = n(),
+            mean_order_num = mean(order_number)) %>% 
+  plot_ly(
+    x = ~mean_order_num, y = ~mean_prior_order, type = "scatter", mode = "markers",
+    color = ~n_order, alpha = 0.5)
+```
+
+### Chart C
+
+```{r}
+weekday_dt <- instacart %>% 
+  filter(product_name %in% c("Pink Lady Apples","Coffee Ice Cream") )%>% 
+  group_by(product_name,order_dow) %>% 
+  summarise(mean_ordered_hour = mean(order_hour_of_day)) %>% 
+  pivot_wider(names_from = order_dow, values_from = mean_ordered_hour) %>% 
+  janitor::clean_names() %>% 
+  rename(Sun = x0, Mon =x1, Tue =x2, Wed =x3, Thu =x4, Fri =x5, Sat =x6) %>% 
+  pivot_longer(!product_name, names_to = "Days",values_to = "Mean_Hour")
+
+plot_C <- weekday_dt %>% ggplot(aes(x = Days, y = Mean_Hour, color = product_name)) + 
+    geom_point() + geom_line(aes(group = product_name))+ xlab("")+ylab("Mean Hour")+ggtitle("Mean Orderded Hour for each day")
+ggplotly(plot_C)
+
+```

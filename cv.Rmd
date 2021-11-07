@@ -1,9 +1,9 @@
 ---
 title: "CV"
 ---
+You can find my detailed CV here.
 
-<a href="CV.pdf#" class="download" title="Download CV as PDF">Download CV</a>			
+<a href="CV_Junzhe_Shao.pdf#" class="download" title="Download CV as PDF">Download CV</a>			
 
-## Header
 
-Say more about your CV here.
+

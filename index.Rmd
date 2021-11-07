@@ -2,4 +2,7 @@
 title: "Welcome to my website!"
 ---
 
-You're up and running!
+![](./night-1011627.jpg)
+
+This is Junzhe(pronounce Jyun-Je)!   
+I am currently a first-year MS student in biostatistics at Columbia University, and I am enthusiastic about causal inference.

@@ -7,15 +7,15 @@ navbar:
     - text: "Home"
       icon: fa-home
       href: index.html
-    - text: "About"
+    - text: "Research"
       icon: fa-user 
       href: about.html
     - text: "CV"
       icon: fa-file-pdf-o
       href: cv.html
-    - text: "plotly"
-      icon: fa-rss
-      href: plotly.html  # CHANGE HERE OR DELETE ALL 3 LINES 
+    - text: "Life"
+      icon: fa-ballons
+      href: life.html
   right:
     - text: "Contact me"
       icon: fa-envelope-o

@@ -1,13 +1,21 @@
 ---
-title: "About me"
+title: "Research"
 ---
 
 
 
-I am currently a first-year MS student in biostatistics at Columbia University, and I am enthusiastic about causal inference.
-  
-  
-Before I have conducted various research projects spanning over biostatistics, bioinformatics, and biomedical research. I chose to be a visiting student in UCSD during my third academic year under the supervision of Prof. Mohit Jain and Dr. Tao Long, working on the topic of Integrative High-Throughput Metabolomics Analysis of Pulmonary Arterial Hypertension Phenotypes and Outcomes. [Find one of the manual script here](https://www.medrxiv.org/content/medrxiv/early/2021/07/14/2021.07.10.21259355.full.pdf) 
+I am enthusiastic about causal inference, machine learning, and time-series analysis. I am planning to pursue a PhD in 2023 and I am looking for any potential opportunities!
+
+# Synthetic Control Method:
+
+I am working on a generalized synthetic control method with state-space model under the guidance of Professor Linda Valeri and Professor David Blei.   
+**working paper**:
+<a href="GSC-SS.pdf#" class="download" title="Download CV as PDF">Generalized Synthetic Control Method with State-Space Model</a>	
+
+
+# Other Research Experience
+
+I was a visiting student in UCSD during my third academic year under the supervision of Prof. Mohit Jain and Dr. Tao Long, working on the topic of Integrative High-Throughput Metabolomics Analysis of Pulmonary Arterial Hypertension Phenotypes and Outcomes. [Find one of the manual script here](https://www.medrxiv.org/content/medrxiv/early/2021/07/14/2021.07.10.21259355.full.pdf) It has been submitted to CHEST, under major revision.
 
 In Peking University, I conducted my research on the topic of Image Based Age and Life Expectancy Prediction of C.elegans under Professor Jingdong Han’s supervision. In this project, I developed a deep learning model based on inception-ResNet-V2 for the image processing of microscopic pictures of Caenorhabditis elegans to predict their mortality and frailty.
 

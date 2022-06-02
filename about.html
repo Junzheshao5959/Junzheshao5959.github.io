@@ -11,10 +11,10 @@
 
 
 
-<title>About me</title>
+<title>Research</title>
 
-<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -62,6 +62,7 @@ if (window.hljs) {
 
 
 
+
 <style type = "text/css">
 .main-container {
   max-width: 940px;
@@ -82,6 +83,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -234,7 +238,7 @@ $(document).ready(function () {
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -254,7 +258,7 @@ $(document).ready(function () {
   <a href="about.html">
     <span class="fa fa-user"></span>
      
-    About
+    Research
   </a>
 </li>
 <li>
@@ -265,10 +269,10 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="plotly.html">
-    <span class="fa fa-rss"></span>
+  <a href="life.html">
+    <span class="fa fa-ballons"></span>
      
-    plotly
+    Life
   </a>
 </li>
       </ul>
@@ -296,14 +300,22 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">About me</h1>
+<h1 class="title toc-ignore">Research</h1>
 
 </div>
 
 
-<p>I am currently a first-year MS student in biostatistics at Columbia University, and I am enthusiastic about causal inference.</p>
-<p>Before I have conducted various research projects spanning over biostatistics, bioinformatics, and biomedical research. I chose to be a visiting student in UCSD during my third academic year under the supervision of Prof. Mohit Jain and Dr. Tao Long, working on the topic of Integrative High-Throughput Metabolomics Analysis of Pulmonary Arterial Hypertension Phenotypes and Outcomes. <a href="https://www.medrxiv.org/content/medrxiv/early/2021/07/14/2021.07.10.21259355.full.pdf">Find one of the manual script here</a></p>
+<p>I am enthusiastic about causal inference, machine learning, and time-series analysis. I am planning to pursue a PhD in 2023 and I am looking for any potential opportunities!</p>
+<div id="synthetic-control-method" class="section level1">
+<h1>Synthetic Control Method:</h1>
+<p>I am working on a generalized synthetic control method with state-space model under the guidance of Professor Linda Valeri and Professor David Blei.<br />
+<strong>working paper</strong>: <a href="GSC-SS.pdf#" class="download" title="Download CV as PDF">Generalized Synthetic Control Method with State-Space Model</a></p>
+</div>
+<div id="other-research-experience" class="section level1">
+<h1>Other Research Experience</h1>
+<p>I was a visiting student in UCSD during my third academic year under the supervision of Prof. Mohit Jain and Dr. Tao Long, working on the topic of Integrative High-Throughput Metabolomics Analysis of Pulmonary Arterial Hypertension Phenotypes and Outcomes. <a href="https://www.medrxiv.org/content/medrxiv/early/2021/07/14/2021.07.10.21259355.full.pdf">Find one of the manual script here</a> It has been submitted to CHEST, under major revision.</p>
 <p>In Peking University, I conducted my research on the topic of Image Based Age and Life Expectancy Prediction of C.elegans under Professor Jingdong Han’s supervision. In this project, I developed a deep learning model based on inception-ResNet-V2 for the image processing of microscopic pictures of Caenorhabditis elegans to predict their mortality and frailty.</p>
+</div>
 
 
 

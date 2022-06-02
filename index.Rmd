@@ -2,7 +2,23 @@
 title: "Welcome to my website!"
 ---
 
-![](./night-1011627.jpg)
+<style type="text/css">
 
-This is Junzhe(pronounce Jyun-Je)!   
-I am currently a first-year MS student in biostatistics at Columbia University, and I am enthusiastic about causal inference.
+body, td {
+   font-size: 14px;
+}
+code.r{
+  font-size: 26px;
+}
+pre {
+  font-size: 26px
+}
+</style>
+<center>
+
+
+</center>
+
+### This is Junzhe(pronounce Jyun-Je)!
+  
+### I am currently a first-year MS student in biostatistics at Columbia University, and I am enthusiastic about causal inference. I am planning to pursue a PhD in 2023 and I am looking for any potential opportunities!

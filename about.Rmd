@@ -8,7 +8,7 @@ I am enthusiastic about causal inference, probablistic machine learning, and tim
 
 # Synthetic Control Method:
 
-I am working on a generalized synthetic control method with state-space model under the direct guidance of [Dr. Linda Valeri](https://www.lindavaleri.com/), [Dr. Mingzhang Yin](https://mingzhang-yin.github.io/) and advices from[Dr. David Blei](http://www.cs.columbia.edu/~blei/).
+I am working on a generalized synthetic control method with state-space model under the direct guidance of [Dr. Linda Valeri](https://www.lindavaleri.com/), [Dr. Mingzhang Yin](https://mingzhang-yin.github.io/) and advices from [Dr. David Blei](http://www.cs.columbia.edu/~blei/).
 We propose a generalized synthetic control method with time-varying weights based on state-space model (GSC-SSM), allowing for a more flexible and accurate construction of counterfactual series. 
 ![](gsc-scm.png)
 ![our method applied to German Reunification data](german_ate_2.png)

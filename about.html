@@ -13,7 +13,7 @@
 
 <title>Research</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -143,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -305,16 +309,48 @@ $(document).ready(function () {
 </div>
 
 
-<p>I am enthusiastic about causal inference, machine learning, and time-series analysis. I am planning to pursue a PhD in 2023 and I am looking for any potential opportunities!</p>
+<p>I am enthusiastic about causal inference, probablistic machine
+learning, and time-series analysis. I am planning to pursue a PhD in
+2023 and I am looking for any potential opportunities!</p>
 <div id="synthetic-control-method" class="section level1">
 <h1>Synthetic Control Method:</h1>
-<p>I am working on a generalized synthetic control method with state-space model under the guidance of Professor Linda Valeri and Professor David Blei.<br />
-<strong>working paper</strong>: <a href="GSC-SS.pdf#" class="download" title="Download CV as PDF">Generalized Synthetic Control Method with State-Space Model</a></p>
+<p>I am working on a generalized synthetic control method with
+state-space model under the direct guidance of <a
+href="https://www.lindavaleri.com/">Dr. Linda Valeri</a>, <a
+href="https://mingzhang-yin.github.io/">Dr. Mingzhang Yin</a> and
+advices from<a href="http://www.cs.columbia.edu/~blei/">Dr. David
+Blei</a>. We propose a generalized synthetic control method with
+time-varying weights based on state-space model (GSC-SSM), allowing for
+a more flexible and accurate construction of counterfactual series. <img
+src="gsc-scm.png" /> <img src="german_ate_2.png"
+alt="our method applied to German Reunification data" /> # Covariates
+Adaptive Design</p>
+<p>Under the guidance of <a
+href="https://sites.google.com/berkeley.edu/jingshenwang/">Dr. Jingshen
+Wang</a>, I have also conducted research in sequential randomization
+under a high-dimensional setting. We investigated the theoretical
+properties of statistical methods to achieve covariates balance for
+randomized clinical trials and proposed a new setting for Pairwise
+Sequential Randomization with many covariates. We further showed better
+efficiency of this sequential randomization.</p>
 </div>
 <div id="other-research-experience" class="section level1">
 <h1>Other Research Experience</h1>
-<p>I was a visiting student in UCSD during my third academic year under the supervision of Prof. Mohit Jain and Dr. Tao Long, working on the topic of Integrative High-Throughput Metabolomics Analysis of Pulmonary Arterial Hypertension Phenotypes and Outcomes. <a href="https://www.medrxiv.org/content/medrxiv/early/2021/07/14/2021.07.10.21259355.full.pdf">Find one of the manual script here</a> It has been submitted to CHEST, under major revision.</p>
-<p>In Peking University, I conducted my research on the topic of Image Based Age and Life Expectancy Prediction of C.elegans under Professor Jingdong Han’s supervision. In this project, I developed a deep learning model based on inception-ResNet-V2 for the image processing of microscopic pictures of Caenorhabditis elegans to predict their mortality and frailty.</p>
+<p>I was a visiting student in UCSD during my third academic year under
+the supervision of Prof. Mohit Jain and Dr. Tao Long, working on the
+topic of Integrative High-Throughput Metabolomics Analysis of Pulmonary
+Arterial Hypertension Phenotypes and Outcomes. Our paper:</p>
+<p>Alotaibi, M., Shao, J., Pauciulo, M. W., Nichols, W. C., Hemnes, A.
+R., Malhotra, A., … &amp; Jain, M. (2022). Metabolomic Profiles
+Differentiate Scleroderma-PAH from Idiopathic PAH and Correspond with
+Worsened Functional Capacity. <a
+href="https://doi.org/10.1016/j.chest.2022.08.2230">CHEST</a></p>
+<p>In Peking University, I conducted my research on the topic of Image
+Based Age and Life Expectancy Prediction of C.elegans under Professor
+Jingdong Han’s supervision. In this project, I developed a deep learning
+model based on inception-ResNet-V2 for the image processing of
+microscopic pictures of Caenorhabditis elegans to predict their
+mortality and frailty.</p>
 </div>
 
 

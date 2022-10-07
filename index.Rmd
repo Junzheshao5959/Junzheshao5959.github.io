@@ -21,4 +21,4 @@ pre {
 
 ### This is Junzhe(pronounce Jyun-Je)!
   
-### I am currently a first-year MS student in biostatistics at Columbia University, and I am enthusiastic about causal inference. I am planning to pursue a PhD in 2023 and I am looking for any potential opportunities!
+### I am currently a first-year MS student in biostatistics at Columbia University, and I am enthusiastic about causal inference, time series analysis and design of clinical trials. I am planning to pursue a PhD in 2023 and I am looking for any potential opportunities!

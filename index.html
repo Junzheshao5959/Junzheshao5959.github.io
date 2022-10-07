@@ -13,7 +13,7 @@
 
 <title>Welcome to my website!</title>
 
-<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -143,11 +143,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -322,8 +326,13 @@ pre {
 <div id="this-is-junzhepronounce-jyun-je" class="section level3">
 <h3>This is Junzhe(pronounce Jyun-Je)!</h3>
 </div>
-<div id="i-am-currently-a-first-year-ms-student-in-biostatistics-at-columbia-university-and-i-am-enthusiastic-about-causal-inference.-i-am-planning-to-pursue-a-phd-in-2023-and-i-am-looking-for-any-potential-opportunities" class="section level3">
-<h3>I am currently a first-year MS student in biostatistics at Columbia University, and I am enthusiastic about causal inference. I am planning to pursue a PhD in 2023 and I am looking for any potential opportunities!</h3>
+<div
+id="i-am-currently-a-first-year-ms-student-in-biostatistics-at-columbia-university-and-i-am-enthusiastic-about-causal-inference-time-series-analysis-and-design-of-clinical-trials.-i-am-planning-to-pursue-a-phd-in-2023-and-i-am-looking-for-any-potential-opportunities"
+class="section level3">
+<h3>I am currently a first-year MS student in biostatistics at Columbia
+University, and I am enthusiastic about causal inference, time series
+analysis and design of clinical trials. I am planning to pursue a PhD in
+2023 and I am looking for any potential opportunities!</h3>
 </div>
 
 

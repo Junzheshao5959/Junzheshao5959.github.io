@@ -14,7 +14,7 @@ navbar:
       icon: fa-file-pdf-o
       href: cv.html
     - text: "Life"
-      icon: fa-ballons
+      icon: fa-camera
       href: life.html
   right:
     - text: "Contact me"

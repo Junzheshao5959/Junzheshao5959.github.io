@@ -12,6 +12,7 @@ I am working on a generalized synthetic control method with state-space model un
 We propose a generalized synthetic control method with time-varying weights based on state-space model (GSC-SSM), allowing for a more flexible and accurate construction of counterfactual series. 
 ![](gsc-scm.png)
 ![our method applied to German Reunification data](german_ate_2.png)
+  
 # Covariates Adaptive Design
 
 Under the guidance of [Dr. Jingshen Wang](https://sites.google.com/berkeley.edu/jingshenwang/), I have also conducted research in sequential randomization under a high-dimensional setting. We investigated the theoretical properties of statistical methods to achieve covariates balance for randomized clinical trials and proposed a new setting for Pairwise Sequential Randomization with many covariates. We further showed better efficiency of this sequential randomization.

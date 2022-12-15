@@ -21,7 +21,7 @@ From classic synthetic control to our new method:
 ![](gsc-scm.png)
 Results on German reunification data:
 
-![our method applied to German Reunification data](german_ate_2.png)
+![](german_ate_2.png)
   
 ## Covariates Adaptive Design
 

@@ -25,5 +25,5 @@ navbar:
       href: https://github.com/Junzheshao5959       # CHANGE HERE 
 output:
   html_document:
-    theme: cosmo
+    theme: darkly
     highlight: textmate

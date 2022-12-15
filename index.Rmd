@@ -19,6 +19,18 @@ pre {
 
 </center>
 
-### This is Junzhe(pronounce Jyun-Je)!
+I am currently a second-year MS student in Biostatistics, and I am enthusiastic about causal inference, time series analysis and design of clinical trials. I am planning to pursue a PhD in 2023 and I am looking for any potential opportunities in statistics/biostatistics/public policy!
+
   
-### I am currently a second-year MS student in biostatistics at Columbia University, and I am enthusiastic about causal inference, time series analysis and design of clinical trials. I am planning to pursue a PhD in 2023 and I am looking for any potential opportunities!
+  
+   
+     
+      
+  
+
+## Education
+
+- 2021-present: MS in Biostatistics, Columbia University Mailman School of Public Health
+- 2016 - 2021: BS in Biology, Minor in Physics, Peking University
+- 2010 - 2020: Visiting Student, University of California, San Diego
+
